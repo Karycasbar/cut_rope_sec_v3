@@ -111,13 +111,7 @@ function draw()
    bubble.visible = false;
     World.remove(engine.world,fruit);
     fruit = null;
-    //bunny.change('eating');
-
     bunny.changeAnimation('eating');
-
-    //bunny.changeAnimation();
-
-    //bunny.Animation('eating');
   }
   
   if(collide(fruit,bubble,40) == true)
@@ -134,7 +128,7 @@ function draw()
 function drop()
 {
   rope2.break();
-  con2.dettach();
+  con2.detach();
   con2 = null; 
 }
 
